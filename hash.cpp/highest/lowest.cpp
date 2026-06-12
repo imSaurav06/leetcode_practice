@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+int maxFreq =0;
+int element = -1;
 unordered_map<int ,int> count_frq(vector<int> &n){
     unordered_map<int, int> count;
     int ans = 0;
@@ -10,11 +11,14 @@ unordered_map<int ,int> count_frq(vector<int> &n){
     for(int i=0; i<m; i++){
         count[n[i]]++;
 
-        ans = max(ans , count.second);
+      if (count[n[i]] > maxFreq) {
+        maxFreq = count[n[i]];
+        element = n[i];
+    }
 
     };
 
-    cout<<ans<<"\n";
+    cout<<element<<"---"<<element<<"\n";
 
 
 return count;

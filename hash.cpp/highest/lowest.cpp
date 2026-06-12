@@ -18,7 +18,7 @@ unordered_map<int ,int> count_frq(vector<int> &n){
 
     };
 
-    cout<<element<<"---"<<element<<"\n";
+    cout<<element<<"---"<<maxFreq<<"\n";
 
 
 return count;

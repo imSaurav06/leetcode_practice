@@ -3,21 +3,25 @@ using namespace std;
 
 int main(){
     map<int, int> mpp;
-    int n[10] = {2,3,4,2,4,2,1,3,45,2};
+    int n[12] = {1,2,3,4,2,4,2,1,3,4,5,2};
 
-    for(int i=0; i < sizeof(n); i++){
+    for(int i=0; i < sizeof(n)/sizeof(n[0]); i++){
         mpp[n[i]]++;
     };
 
-    int q;
-    cin>>q;
-    while(q--){
+    for( auto it : mpp){
+        cout<< it.first <<"---->"<< it.second<<endl;
+    }
 
-        int n=0;
-        cin >>n;
-        cout<<n<<" "<<mpp[n];
+    // int q;
+    // cin>>q;
+    // while(q--){
 
-    };
+    //     int n=0;
+    //     cin >>n;
+    //     cout<<n<<" "<<mpp[n];
+
+    // };
     
 
 return 0;

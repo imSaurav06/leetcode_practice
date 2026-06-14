@@ -21,4 +21,18 @@ int main(){
     int q;
     cout<<"put--";
     cin>>q;
-  
+    int arr[q];
+    
+    for(int i=0; i<q; i++ ){
+        cin>>arr[i];
+    };
+    selectionSort(arr, q);
+
+    for(int i=0; i<q; i++ ){
+        cout<<"-"<<arr[i];
+    };
+
+
+    return 0;
+    
+}

@@ -3,7 +3,8 @@ using namespace std;
 
 void InsertionSort(vector<int>arr, int n) {
 
-   
+//    function of Insertion sort
+
   for(auto x : arr ){
         cout<<"-"<<x;
     };
@@ -19,7 +20,7 @@ int main(){
     };
     cout<<'\n';
 
-    BubbleSort(arr, nn);
+    InsertionSort(arr, nn);
 
   
 

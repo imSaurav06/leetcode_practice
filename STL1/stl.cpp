@@ -97,6 +97,10 @@ v.clear(); //clear entire vector
 
 v.clear(); // erases the entire vector
 
+sort(arr.begin(), arr.end(), greater<int>());
+sort(arr.begin(), arr.end());
+
+
    
 
 

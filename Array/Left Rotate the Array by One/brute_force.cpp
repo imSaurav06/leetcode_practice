@@ -22,7 +22,7 @@ int main(){
     m.push_back(4);
     m.push_back(5);
     m.push_back(6);
-    m.push_back(7);
+   
     
 
 

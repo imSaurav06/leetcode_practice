@@ -1,14 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-auto Union(vector<int>&arr1,vector<int>arr2){
+set<int> Union(vector<int>&arr1,vector<int>&arr2){
   set<int>st;
-  int n = arr1.size()
-  int m = arr1.size()
+  int n = arr1.size();
+  int m = arr1.size();
   for(int i=0; i<max(m,n); i++){
     st.insert(arr1[i]);
     st.insert(arr2[i]);
   }
+  
+   // Convert set to vector
+//  vector<int> unionArr(st.begin(), st.end());
+//         return unionArr;
 
   return st;
 }
@@ -23,8 +27,16 @@ int main(){
     ar1.push_back(5);
     ar2.push_back(1);
     ar2.push_back(2);
+    ar1.push_back(4);
+    ar1.push_back(5);
+    ar2.push_back(1);
+    ar2.push_back(2);
+    ar1.push_back(9);
+    ar1.push_back(5);
+    ar2.push_back(1);
+    ar2.push_back(2);
     ar2.push_back(4);
-    ar2.push_back(4);
+    ar2.push_back(8);
     ar2.push_back(5);
     ar2.push_back(6);
    

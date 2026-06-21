@@ -32,9 +32,9 @@ int main(){
     
 
 
- for (auto [x, y] : ::zip(ar1, ar2)) {
-        cout << x << ' ' << y << '\n';
- }
+for (size_t i = 0; i < ar1.size(); i++) {
+    cout << ar1[i] << ' ' << ar2[i] << '\n';
+}
 
 cout<<'\n';
 

@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+vector<int> Union(vector)
 int main(){
 
     vector<int>ar1;

@@ -1,42 +1,30 @@
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> rotatebyone(vector<int>&arr){
-    int temp = arr[0];
+// Function to solve and shift array elements left by one position
+void solve(int arr[], int n) {
+    int temp[n];  // Create a temporary array to store the shifted elements
 
-    for(int i=1; i<=arr.size(); i++){
-        arr[i-1] = arr[i];
+    // Shift the elements to the left by one position
+    for (int i = 1; i < n; i++) {
+        temp[i - 1] = arr[i];
     }
-    arr[arr.size()-1] = temp;
+    temp[n - 1] = arr[0];  // The first element moves to the last position
 
-
-    return arr;
+    // Print the rotated array
+    for (int i = 0; i < n; i++) {
+        cout << temp[i] << " ";  // Print each element of the rotated array
+    }
+    cout << endl;
 }
 
-int main(){
+int main() {
+    int n = 5;  // Size of the array
+    int arr[] = {1, 2, 3, 4, 5};  // Original array
 
-    vector<int>m;
-    m.push_back(1);
-    m.push_back(2);
-    m.push_back(3);
-    m.push_back(4);
-    m.push_back(5);
-    m.push_back(6);
-   
-    
+    solve(arr, n);  // Call the solve function to rotate and print the result
 
-
-for(auto x : m){
-    cout<<x<<' ';
-}
-
-cout<<'\n';
-
-rotatebyone(m);
-
-for(auto x : m){
-    cout<<x<<' ';
-}
-
- return 0;
+    return 0;
 }

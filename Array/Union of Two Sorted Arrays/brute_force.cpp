@@ -1,7 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> Union(vector)
+auto Union(vector<int>&arr1,vector<int>arr2){
+  set<int>st;
+  int n = arr1.size()
+  int m = arr1.size()
+  for(int i=0; i<max(m,n); i++){
+    st.insert(arr1[i]);
+    st.insert(arr2[i]);
+  }
+
+  return st;
+}
 int main(){
 
     vector<int>ar1;
@@ -28,7 +38,7 @@ int main(){
 
 cout<<'\n';
 
-vector<int> result = Union(ar1 ,ar2);
+set<int> result = Union(ar1 ,ar2);
 
   for(auto x : result){
     cout<<x<<' ';

@@ -9,6 +9,7 @@ public:
         if (current > n)
             return;
 
+            
         // Recursive call with next number
         printNumbers(current + 1, n);
 
@@ -26,7 +27,7 @@ int main() {
     cout << "\n";
 
 
-    
+
     return 0;
 }
 

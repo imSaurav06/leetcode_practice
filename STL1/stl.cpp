@@ -318,6 +318,7 @@ void set() { //stores unique elements in a particular order.
   }
   cout << endl;
 
+  
   cout << "The size of the set is: " << s.size() << endl;  ///Return the size of the set
 
   if (s.empty() == false)

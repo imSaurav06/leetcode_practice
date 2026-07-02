@@ -17,6 +17,7 @@ public:
     }
 };
 
+
 int main() {
     Solution sol;
     int n = 10;

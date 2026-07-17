@@ -13,7 +13,7 @@ public:
         // Recursive call with next number
         printNumbers(current + 1, n);
 
-        // Print current number during backtracki ng
+        // Print current number during backtrack i ng
         cout << current << " ";
     }
 };

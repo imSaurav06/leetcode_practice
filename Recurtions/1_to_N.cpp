@@ -10,7 +10,7 @@ public:
             return;
 
             
-        // Recursive call with next number
+        // Recursive call with next  number
         printNumbers(current + 1, n);
 
         // Print current number during backtrack i ng

@@ -12,7 +12,7 @@ public:
         // Recursive call with previous number
         printNumbers(current - 1);
 
-        // Print current number during backtracking
+        // Print current number during  backtracking
         cout << current << " ";
     }
 };

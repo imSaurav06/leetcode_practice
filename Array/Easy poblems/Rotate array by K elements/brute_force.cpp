@@ -29,10 +29,11 @@ int main() {
 
     KRotate(arr, k);
 
-    cout << "Array after left rotation by " << k << " positions:\n";
+    cout << "Array after left  rotation by " << k << " positions:\n";
     for (int x : arr) {
         cout << x << " ";
     }
 
     return 0;
 }
+

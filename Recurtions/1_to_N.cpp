@@ -13,11 +13,11 @@ public:
         // Recursive call with next number
         printNumbers(current + 1, n);
 
-        // Print current number during backtracking
+        // Print current number during backtracki ng
         cout << current << " ";
     }
 };
-
+ 
 
 int main() {
     Solution sol;
